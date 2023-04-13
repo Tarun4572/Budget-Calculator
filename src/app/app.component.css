@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+} 
+
+.container-fluid h1{
+    font-size: 18px;
+    color: white;
+}
+
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:10px ;
+    padding: 0;
+    height: 150px;
+}
+.jumbotron h2{
+    font-size: 50px;
+}
+
+

@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-xs-3">
+        <h2 style="color: green;"> Income </h2>  
+        
+        <div class="list-group" 
+        *ngFor="let i of items;let ind=index">
+        <app-item 
+        *ngIf="i.amount>=0" 
+        [item]="i" 
+        [index]="ind"
+        (click)="selecteditem(ind)"
+        ></app-item>
+        </div>
+    </div>
+
+    <div class="col-xs-3">
+        <h2 style="color: red;">Expenses</h2>
+        <div class="list-group"
+         *ngFor="let i of items;let ind=index">
+            <app-item 
+            *ngIf="i.amount<0"
+             [item]="i" 
+             [index]="ind"
+             (click)="selecteditem(ind)"
+             ></app-item>
+        </div>
+    </div>
+</div>
